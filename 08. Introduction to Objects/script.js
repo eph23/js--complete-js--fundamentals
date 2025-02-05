@@ -9,10 +9,9 @@ An object is a collection of key-value pairs where each key (property) is mapped
 ✔ Objects can store methods (functions inside objects).
 ✔ The this keyword refers to the current object.
 ✔ Use for...in to loop through properties.
-
-
 */
 
+// Object literals
 const eph = {
     firstName: "Ephraim",
     lastName: "S",
@@ -22,6 +21,15 @@ const eph = {
 
 console.log(eph);
 
+// NOTE: Using construction function
+/* 
+The new keyword in JavaScript is used to create new object instances from a constructor function. It helps create multiple objects with the same structure.
+*/
+let person = new Object();
+person.name = "Bob";
+person.age = 30;
+
+console.log(person);
 
 // NOTE: Objects vs. Arrays
 /* Feature	          Objects	               Arrays
